@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Buddy | FAQs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="faq.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Budget Buddy</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="dashboard.html">Dashboard</a>
+      <a href="expenses.html">Expenses</a>
+      <a href="faq.html" class="active">FAQs</a>
+      <a href="index.html" class="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <!-- FAQ Section -->
+  <main class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+    
+    <div class="faq-categories">
+      <button class="category-btn active" data-category="all">All Questions</button>
+      <button class="category-btn" data-category="getting-started">Getting Started</button>
+      <button class="category-btn" data-category="features">Features</button>
+      <button class="category-btn" data-category="troubleshooting">Troubleshooting</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="faq-search" placeholder="Search FAQs...">
+      <i class="fas fa-search"></i>
+    </div>
+
+    <div class="faq-list" id="faq-list">
+      <!-- FAQ items will be loaded dynamically -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 Budget Buddy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="faq.js"></script>
+</body>
+</html>
